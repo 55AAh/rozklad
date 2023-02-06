@@ -52,7 +52,7 @@ function loadData() {
 					else {
 						_p += '<a';
 					}
-					zoom_type = {'lecture': 'Лек on-line', 'practice': 'Прак on-line', 'lab': 'Лаб on-line'}[_pair['type']];
+					zoom_type = {'lecture': 'Лек on-line', 'practice': 'Прак on-line', 'lab': 'Лаб on-line', 'lecture-practice': '0,5 Лек, 0,5 Прак'}[_pair['type']];
 					_p += ` target="_blank" class="connect">${zoom_type}</a>`;
 					
 					_r.push(_p);
