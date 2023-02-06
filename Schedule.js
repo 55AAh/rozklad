@@ -121,5 +121,7 @@
         setTimeout(function() { location.reload(); }, next_update_delta * 1000);
     }
 
-    calculate(new Date());
+    if (loadData()) {
+        calculate(new Date());
+    }
 });
