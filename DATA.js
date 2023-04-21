@@ -39,11 +39,6 @@ let t = {
 		"long_name": "доцент Юдіна Наталія Володимирівна",
 		"sched_link": "http://epi.kpi.ua/Schedules/ViewSchedule.aspx?v=4109c241-1039-4e4c-a94f-ea0a40b68883",
 	},
-	"Костенко": {
-		"short_name": "доц. Костенко І. В.",
-		"long_name": "доцент Костенко Ірина Валентинівна",
-		"sched_link": "http://epi.kpi.ua/Schedules/ViewSchedule.aspx?v=88cc5ab0-53e5-46e9-98e4-1901ed91c72c",
-	},
 	"Бендюг": {
 		"short_name": "доц. Бендюг В. І.",
 		"long_name": "доцент Бендюг Владислав Іванович",
@@ -79,10 +74,6 @@ let s = {
 	"Блокчейн": {
 		"title": "Технологія Blockchain",
 		"wiki_link": "http://wiki.kpi.ua/index.php/%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F%20Blockchain_(19101910)",
-	},
-	"Патент-1": {
-		"title": "Інтелектуальна власність та патентознавство -1. Право інтелектуальної власності",
-		"wiki_link": "http://wiki.kpi.ua/index.php/%D0%86%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D0%B2%D0%BB%D0%B0%D1%81%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%D1%82%D0%B0%20%D0%BF%D0%B0%D1%82%D0%B5%D0%BD%D1%82%D0%BE%D0%B7%D0%BD%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D0%BE%20-1.%20%D0%9F%D1%80%D0%B0%D0%B2%D0%BE%20%D1%96%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%97%20%D0%B2%D0%BB%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%96_(19103360)",		
 	},
 	"Патент-2": {
 		"title": "Інтелектуальна власність та патентознавство -2. Патентознавство та набуття прав",
@@ -151,11 +142,6 @@ let p = {
 		"teacher": t["Маслянко"],
 		"type": "practice",
 		"zoom_link": "https://zoom.us/j/9894791748?pwd=U05WQ1F5QkQrMWpYMW5TR1ZoWjRHQT09",
-	},
-	"Патент-1": {
-		"subject": s["Патент-1"],
-		"teacher": t["Костенко"],
-		"type": "lecture-practice",
 	},
 	"Патент-2 лек": {
 		"subject": s["Патент-2"],
@@ -263,7 +249,6 @@ var schedule_data = {
 				2: p["Матмед лаб"],
 				3: p["Конфлікт лек"],
 				4: p["Стартап лек"],
-				5: p["Патент-1"],
 			},
 			"Середа": {
 				2: p["Інновації прак"],
@@ -313,7 +298,6 @@ var schedule_data = {
 				2: p["Нечіткі прак"],
 				3: p["Конфлікт лек"],
 				4: p["Стартап лек"],
-				5: p["Патент-1"],
 			},
 			"Середа": {
 				2: p["Конфлікт прак"],
