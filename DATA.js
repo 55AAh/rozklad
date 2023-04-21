@@ -167,6 +167,7 @@ let p = {
 		"subject": s["Патент-2"],
 		"teacher": t["Вакуленко"],
 		"type": "practice",
+		"zoom_link": "https://meet.google.com/dpp-asjk-rvu?authuser=1&hl=uk",
 	},
 	"Матмед лек": {
 		"subject": s["Матмед"],
@@ -184,7 +185,7 @@ let p = {
 		"subject": s["Нечіткі"],
 		"teacher": t["Третиник"],
 		"type": "lecture",
-		"zoom_link": "https://us02web.zoom.us/j/4015034022?pwd=R1A2S08wUldoREFqS3hpK0FLdFAyZz09",
+		"zoom_link": "https://us02web.zoom.us/j/6636117752?pwd=ZldvMzNRNkJ4T09sNGYzZ1pya0t0UT09",
 	},
 	"Нечіткі прак": {
 		"subject": s["Нечіткі"],
