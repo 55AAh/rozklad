@@ -1,8 +1,9 @@
 function loadData() {
-	let team = new URLSearchParams(window.location.search).get('team');
+	/*let team = new URLSearchParams(window.location.search).get('team');
 	if (!(team in schedule_data)) {
 		team = ('; ' + document.cookie).split('; team=').pop().split(';')[0];
-	}
+	}*/
+    let team = 'mn';
 
 	console.log(`Team: ${team}`);
 
@@ -20,7 +21,7 @@ function loadData() {
 		return false;
 	}
 
-    document.cookie = `team=${team}`;
+    //document.cookie = `team=${team}`;
 
 	for (let week_i = 0; week_i < 2; week_i++) {
 		let data = schedule_data[team][`week_${week_i + 1}`];
