@@ -81,31 +81,37 @@ let p = {
 		"subject": s["Англ"],
 		"teacher": t["Муханова"],
 		"type": "practice",
+        "zoom_link": "https://us04web.zoom.us/j/78544619055?pwd=He3bUG9TE11pqGRm78TK9RBuAZYFah.1",
 	},
     "Управління проектами лек": {
 		"subject": s["Управління проектами"],
 		"teacher": t["Чертов"],
 		"type": "lecture",
+		"zoom_link": "https://us02web.zoom.us/j/7407927082?pwd=dTVreXJLQXFzdVNrTUp0aVpZUzdJUT09",
 	},
     "Управління проектами лаб": {
 		"subject": s["Управління проектами"],
 		"teacher": t["Чертов"],
 		"type": "lab",
+		"zoom_link": "https://us02web.zoom.us/j/7407927082?pwd=dTVreXJLQXFzdVNrTUp0aVpZUzdJUT09",
 	},
     "Бігдата лек": {
 		"subject": s["Бігдата"],
 		"teacher": t["Мальчиков"],
 		"type": "lecture",
+        "zoom_link": "https://us02web.zoom.us/j/7407927082?pwd=dTVreXJLQXFzdVNrTUp0aVpZUzdJUT09",
 	},
     "Бігдата лаб": {
 		"subject": s["Бігдата"],
 		"teacher": t["Мальчиков"],
 		"type": "lab",
+        "zoom_link": "https://us02web.zoom.us/j/7407927082?pwd=dTVreXJLQXFzdVNrTUp0aVpZUzdJUT09",
 	},
     "Текст майнінг": {
 		"subject": s["Текст майнінг"],
 		"teacher": t["Сирота"],
 		"type": "lecture",
+        "zoom_link": "https://us02web.zoom.us/j/83965884580?pwd=N08zT2VuazU2cTBhMWcxZGlMaXU1UT09",
 	},
     "Педагогіка лек": {
 		"subject": s["Педагогіка"],
@@ -121,21 +127,25 @@ let p = {
 		"subject": s["Системна інженерія"],
 		"teacher": t["Маслянко"],
 		"type": "lecture",
+        "zoom_link": "https://us04web.zoom.us/j/2729661736?pwd=Jf1bdGzfuUqimufXxawpaFsFdETHRo.1",
 	},
     "Системна інженерія лаб": {
 		"subject": s["Системна інженерія"],
 		"teacher": t["Маслянко"],
 		"type": "lab",
+        "zoom_link": "https://us04web.zoom.us/j/2729661736?pwd=Jf1bdGzfuUqimufXxawpaFsFdETHRo.1",
 	},
     "Прикладне моделювання": {
 		"subject": s["Прикладне моделювання"],
 		"teacher": t["Соловйов"],
 		"type": "lab",
+        "zoom_link": "https://us02web.zoom.us/j/7407927082?pwd=dTVreXJLQXFzdVNrTUp0aVpZUzdJUT09",
 	},
     "Науковий семінар": {
 		"subject": s["Науковий семінар"],
 		"teacher": t["Маслянко"],
 		"type": "lecture",
+        "zoom_link": "https://us04web.zoom.us/j/2729661736?pwd=Jf1bdGzfuUqimufXxawpaFsFdETHRo.1",
 	},
 };
 
