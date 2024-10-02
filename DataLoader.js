@@ -3,7 +3,7 @@ function loadData() {
 	if (!(team in schedule_data)) {
 		team = ('; ' + document.cookie).split('; team=').pop().split(';')[0];
 	}*/
-    let team = 'mn';
+    let team = 'f';
 
 	console.log(`Team: ${team}`);
 
