@@ -77,7 +77,7 @@
         else {
             cell(closest_week, closest_day, closest_pair).addClass('closest_pair');
             var closest_cell = cell(closest_week, closest_day, closest_pair);
-            if (closest_day == current_day) {
+            if (closest_week == current_week && closest_day == current_day) {
                 console.log('Current state: before');
                 var next_update_seconds = 8 * 3600 + 30 * 60 + closest_pair * (115 * 60);
             }
