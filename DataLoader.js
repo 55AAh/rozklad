@@ -22,6 +22,10 @@ function loadData() {
 	}
 
     //document.cookie = `team=${team}`;
+	
+	let team_name = schedule_data[team]['team_name'];
+	console.log(`Team name: ${team_name}`);
+	document.title = `Розклад ${team_name}`;
 
 	for (let week_i = 0; week_i < 2; week_i++) {
 		let data = schedule_data[team][`week_${week_i + 1}`];
