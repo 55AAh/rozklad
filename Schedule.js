@@ -1,10 +1,10 @@
-﻿$(document).ready(function () {
+$(document).ready(function () {
 
     function calculate(current_date) {
         console.log(`Current date: ${current_date}`);
 
         var days_count = $('.day').length;
-        console.assert(days_count == 72, 'days count =', days_count, '!= 72');
+        console.assert(days_count == 84, 'days count =', days_count, '!= 84');
 
         $('.day').removeClass().addClass('day');
         $('.connect:not([href])').css('color', 'grey');
@@ -20,7 +20,7 @@
 
         var current_day = current_date.getDay() - 1;
         if (current_day >= 0) {
-            for (pair = 0; pair < 6; pair++) {
+            for (pair = 0; pair < 7; pair++) {
                 cell(current_week, current_day, pair).addClass('day_backlight');
             }
         }

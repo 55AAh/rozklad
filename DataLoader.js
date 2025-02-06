@@ -32,7 +32,7 @@ function loadData() {
 		let table = $(`#week${week_i}_table`);
 		let days = ["Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота"];
 		table.append(`<tr><td></td>${days.map(d => `<td>${d}</td>`).join('')}</tr>`);
-		['08:30', '10:25', '12:20', '14:15', '16:10', '18:30'].forEach((t, i) => {
+		['08:30', '10:25', '12:20', '14:15', '16:10', '18:30', '20:20'].forEach((t, i) => {
 			let _r = [];
 			days.map(_d => {
 				if (_d in data && i + 1 in data[_d]) {
@@ -46,10 +46,16 @@ function loadData() {
 					wiki_link = _pair['subject']['wiki_link'];
 					_p = `<span class="disLabel"><a class="plainLink" href="${wiki_link}" title="${title}">${title}</a></span><br>`;
 					
-					short_name = _pair['teacher']['short_name'];
-					long_name = _pair['teacher']['long_name'];
-					sched_link = _pair['teacher']['sched_link'];
-					_p += `<a class="plainLink" href="${sched_link}" title="${long_name}">${short_name}</a><br>`;
+					_pair['teachers'].forEach((teacher, index) => {
+						if (index > 0) {
+							_p += `, `;
+						}
+						short_name = teacher['short_name'];
+						long_name = teacher['long_name'];
+						sched_link = teacher['sched_link'];
+						_p += `<a class="plainLink" href="${sched_link}" title="${long_name}">${short_name}</a>`;
+					});
+					_p += `<br>`;
 					
 					if (_pair['zoom_link']) {
 						_p += `<a href="${_pair['zoom_link']}" title="Приєднатися до заняття"`;
