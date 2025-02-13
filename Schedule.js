@@ -1,16 +1,18 @@
 $(document).ready(function () {
 
+    const pairsPerDay = 7;
+
     function calculate(current_date) {
         console.log(`Current date: ${current_date}`);
 
         var days_count = $('.day').length;
-        console.assert(days_count == 84, 'days count =', days_count, '!= 84');
+        console.assert(days_count == 2 * 6 * pairsPerDay, 'days count =', days_count, `!= ${2 * 6 * pairsPerDay}`);
 
         $('.day').removeClass().addClass('day');
         $('.connect:not([href])').css('color', 'grey');
 
         function cell(week, day, pair) {
-            return $(`.day:eq(${week * 36 + pair * 6 + day})`);
+            return $(`.day:eq(${(week * pairsPerDay + pair) * 6 + day})`);
         }
 
         var current_week = 1;
@@ -20,7 +22,7 @@ $(document).ready(function () {
 
         var current_day = current_date.getDay() - 1;
         if (current_day >= 0) {
-            for (pair = 0; pair < 7; pair++) {
+            for (pair = 0; pair < pairsPerDay; pair++) {
                 cell(current_week, current_day, pair).addClass('day_backlight');
             }
         }
